@@ -11,15 +11,25 @@ Features
 - Minimal UI and clean code structure
 Project Structure
 php-connectivity/
+
 ├── config.php             # Database connection setup
+
 ├── create.php             # Create new record
+
 ├── index.php              # Home - list all records
+
 ├── view.php               # View details of a single record
+
 ├── update.php             # Edit existing record
+
 └── delete.php             # Delete a record
+
+
 Database Setup
 1. Open phpMyAdmin (or any MySQL client)
+
 2. Run the following SQL commands to create the database and table:
+
 CREATE DATABASE php_crud;
 
 USE php_crud;
@@ -30,6 +40,8 @@ CREATE TABLE users (
   email VARCHAR(100) NOT NULL UNIQUE,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 Configuration
 1. Open config.php and update it with your local database credentials:
 <?php
